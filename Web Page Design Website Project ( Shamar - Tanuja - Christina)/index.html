@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" name="viewport" 
+	content="width=device-width, initial-scale=1">
+	<meta name="author" content="Shamar P.">
+	<link rel="stylesheet" 
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <link href="CSS/index.css" rel="stylesheet" type="text/css" />
+	
+    <title>Home</title>
+</head>
+
+<style>
+
+
+.pic-1 {
+  opacity: 1;
+  background: url(Images/home1.jpeg) no-repeat center center;
+  background-attachment: fixed;
+  -webkit-background-size: 100% 98%;
+  -moz-background-size: 100% 98%;
+  -o-background-size: 100% 98%;
+  background-size: 100% 98%;
+
+}
+
+.pic-2 {
+  animation-delay: 6s;
+  -o-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -webkit-animation-delay: 6s;
+  background: url(Images/home2.jpeg) no-repeat center center;
+  background-attachment: fixed;
+  -webkit-background-size: 100% 98%;
+  -moz-background-size: 100% 98%;
+  -o-background-size: 100% 98%;
+  background-size: 100% 98%;
+
+}
+
+.pic-3 {
+  animation-delay: 12s;
+  -o-animation-delay: 12s;
+  -moz-animation-delay: 12s;
+  -webkit-animation-delay: 12s;
+  background: url(Images/home3.jpeg) no-repeat center center;
+  background-attachment: fixed;
+  -webkit-background-size: 100% 98%;
+  -moz-background-size: 100% 98%;
+  -o-background-size: 100% 98%;
+  background-size: 100% 98%;
+
+}
+
+.pic-4 {
+  animation-delay: 18s;
+  -o-animation-delay: 18s;
+  -moz-animation-delay: 18s;
+  -webkit-animation-delay: 18s;
+  background: url(Images/architecture.jpeg) no-repeat center center;
+ background-attachment: fixed;
+  -webkit-background-size: 100% 98%;
+  -moz-background-size: 100% 98%;
+  -o-background-size: 100% 98%;
+  background-size: 100% 98%;
+}
+
+
+</style>
+<body >
+<!--
+
+-->
+
+<div class="first-view" style="background-color: black">
+	<nav class="nav-bar" style="margin: 0px">
+	<div class="dropdown">
+		 <div class="dropbtn container-1" onclick="myFunction(event, this); myFunction1();" style="padding-left: 10px">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div> 
+	
+
+			<div id="myDropdown" class="dropdown-content">
+				<a href="index.html" id="active">Home</a>
+				<a href="products.html">Products</a>
+				<a href="about.html" >About Us</a>
+			</div>
+		</div>
+	</div>
+		<img src="Images/logo.png" style=" width: 100px; height: 25px; float: right; margin-top: 7px; margin-right: 1.5em; border-radius:0">
+	</nav>
+
+	<div class="pic-wrapper">
+
+		<figure class="pic-1"></figure>
+		<figure class="pic-2"></figure>
+		<figure class="pic-3"></figure>
+		<figure class="pic-4"></figure>
+	</div>
+	
+	
+	<h1 id ="heading1" style="font-size:70px; color: white">Welcome to Moble!</h1>
+	<br><br>
+	<p style="color: white; padding-left: 10px; font-size: 1.25em">Our Mission: <span id="mission">Providing furniture with the passion of bringing comfort, home.<span></p>
+
+	
+</div>
+
+<div id="products-home" style="padding-top: 25px; padding-left: 40px;" class="products">
+	<div> 
+		<h1>Products</h1>
+		<p style="padding: 10px; text-align: center; margin-bottom: 25px; font-size: 1.25em">Just a taste of what business has to offer. Want to see more?
+		<br>Head on over to our products page from the top-left menu. And remember, be prepared to be dazzled. <br></p>
+
+		<div class="container">
+              <div class="row" style="margin-bottom: 50px">
+                <div  class="col-sm-4 text-center">
+                    <img src="Images/indoor-dining.jpeg" alt="Image 1" style="width: 265px; height: 245px;">
+                </div>
+
+                <div class="col-sm-4 text-center">
+                    <img src="Images/sample.jpeg" alt="Image 2" style="width: 265px; height: 245px;">                     
+                </div>
+
+                <div class="col-sm-4 text-center">
+                    <img src="Images/outdoor-sofa.jpeg" alt="Image 3"style="width: 265px; height: 245px;">
+                </div>
+              </div>
+		</div>
+	</div>
+</div>
+	<!--Footer-->
+            <footer class="container-fluid text-center">
+              <div class="row">
+              <div class="col-sm-4">
+                <h3>Contact Us...</h3>
+                <br>
+                <h4><h4>Address: Burdon Street, Basseterre, St. Kitts and Nevis.
+                    <br>
+                    <br>
+                      Telephone: +1 869-465-2856
+                </h4>
+              </div>
+              <div class="col-sm-4" id="connect" style="float: right">
+                <h3>Connect</h3>
+                <br>
+                <a href="https://facebook.com" class="fa fa-facebook"></a>
+                <a href="https://twitter.com" class="fa fa-twitter"></a>
+                <a href="https://linkedin.com" class="fa fa-linkedin"></a>
+                <a href="https://youtube.com" class="fa fa-youtube"></a>
+              </div>
+    
+            </footer>
+
+	
+
+	<script>
+		function myFunction(e, x) {
+		x.classList.toggle("change");
+		e.stopPropagation();
+		}
+
+		function myFunction1(){
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown if the user clicks outside of it
+		 window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn')) {
+		    var dropdowns = document.getElementsByClassName("dropdown-content");
+		    var i;
+		    for (i = 0; i < dropdowns.length; i++) {
+		      var openDropdown = dropdowns[i];
+		      if (openDropdown.classList.contains('show')) {
+		        openDropdown.classList.remove('show');
+				x=document.getElementsByClassName("dropbtn");
+				myFunction(event, x[0]);
+		      }
+
+		    }
+			
+		  }
+		} 
+
+		
+	</script>
+
+
+	<!--
+	<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script> -->
+
+</body>
+</html>
