@@ -1,0 +1,348 @@
+﻿    <!--<div>
+            Guidlines
+              <! Nav tabs 
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                <li role="presentation"><a href="#about" aria-controls="about" role="tab" data-toggle="tab">About</a></li>
+                <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
+                <li role="presentation"><a href="#NAn" aria-controls="NAn" role="tab" data-toggle="tab">NAn</a></li>
+              </ul>
+            
+              <! Tab panes 
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <h4>Hello</h4>
+                    <p>Hello again</p>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="about">...</div>
+                <div role="tabpanel" class="tab-pane" id="contact">...</div>
+                <div role="tabpanel" class="tab-pane" id="NAn">...</div>
+              </div>
+            
+    </div> -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This website is meant to test the knowledge of students in creating websites.">
+        <meta name="author" content="Shamar P.">
+    
+      <title>About Us</title>
+    
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+      <style>
+        
+     .nav-bar{
+	 	 background-color: #000;
+		
+	 }
+          #icon {
+            max-width: 200px;
+            margin: 1% auto;
+          }
+
+		  .container-1 {
+  display: inline-block;
+  z-index: 11;
+  cursor:pointer;
+  color: black;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+  z-index: 1;
+}
+
+.dropbtn{
+	cursor: pointer;
+	z-index: 11	;
+}
+
+.dropbtn:focus{
+	background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;\
+
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  z-index:10;
+}
+
+.dropdown a:hover {
+	background-color: #ddd;
+	}
+
+#active{
+	background-color: #ddd;
+}
+
+.show {display: block;}
+
+          footer {
+            width: 100%;
+            background-color: black;
+            padding: 3%;
+            color: white;
+          }
+          .fa {
+            padding: 15px;
+            font-size: 25px;
+            color:rgb(38, 59, 153);
+          }
+
+          .fa:hover {
+            color:blueviolet;
+            text-decoration: none;
+          }
+
+          .bg-light img{
+            border-radius: 50%;
+          }
+
+		  .text-muted{
+		  	  color: black;
+		  }
+
+		  h5{
+		  	  font-weight: bold;
+		  }
+    
+	/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+#connect{
+	float:right;
+}
+      </style>
+    </head>
+    <body>
+		<nav class="nav-bar" style="margin: 0px">
+			<div class="dropdown">
+				<div class="dropbtn container-1" onclick="myFunction(event, this); myFunction1();" style="padding-left: 10px">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div> 
+		
+		
+					<div id="myDropdown" class="dropdown-content">
+						<a href="index.html">Home</a>
+						<a href="products.html">Products</a>
+						<a href="about.html" id="active">About Us</a>
+					</div>
+				</div>
+			</div>
+
+			<img src="Images/logo.png" style=" width: 100px; height: 25px; float: right; margin-top: 7px; margin-right: 1.5em">
+		</nav>
+    
+    <!-- About -->
+    <section id="about">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 text-center">
+                  <h2 class="section-heading text-uppercase" style="font-family: lucida calligraphy; color: turquoise">About This Site</h2>
+				  <p style="font-size: 1em;">The name of this site, Moble, derived from mobler, which is Norwegian for furniture, is a brick and mortar company <br>
+				  that sells both interior and exterior furniture with the passion of bringing comfort to home for all customers. 
+				  <br><br>
+				  This website serves to promote Moble on an internation, digital platform. Increasing the awareness with the hopes of increasing it&#39;s demand </p>
+                </div>
+              </div>
+            </div>
+			<br><br>
+	</section>
+                  
+          
+          <!-- Team -->
+    <section class="bg-light" id="team">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 text-center">
+                  <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+                </div>
+              </div>
+              <br>
+              <br>
+              <div class="row">
+                <div class="col-sm-4 text-center">
+                  <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="Images/Shamar.jpeg" alt="Shamar Pemberton" style="height: 250px; width: 250px">
+                    <h3>Shamar Pemberton</h3>
+					<h5>Web Master</h5>
+                    <p class="text-muted">"Developing this website was no easy feat but with the constant support of my team we were abel to pull it off.<br>
+					Each area of this website has teh essence of each team member coursing through it. It thrives on our stability as one unit. I can&#39;t imagine
+					working with anyone else. Truly grateful."</p>
+                    <ul class="list-inline social-buttons">
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <a href="#" title="Twitter Website"><i class="fa fa-twitter"></i></a>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <a href="https://www.facebook.com/shamar.yohan" title="Facebook Website"><i class="fa fa-facebook"></i></a>
+                        </a>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <a href="#" title="Linkedin Website"><i class="fa fa-linkedin"></i></a>                         
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4 text-center">
+                  <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="Images/Tanuja.jpeg" alt="Tanuja Delaney" style="height: 250px; width: 250px">
+                    <h3>Tanuja Delaney</h3>
+					<h5>Product Manager</h5
+                    <p class="text-muted">"The role of Product Manager means that I am the one responsible for the development of products for the organization. 
+					I have accepted this role because of my product expertise needed to lead the company. I wouldn&#39t trade my role in this company for anything."</p>
+                    <ul class="list-inline social-buttons">
+                      <li class="list-inline-item">
+                        <a href="#" title=""Twitter Website>
+                          <i class="fa fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <a href="#" title="Facebook Website"><i class="fa fa-facebook"></i></a>
+                        </a>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <a href="#" title="Linkedin Website"><i class="fa fa-linkedin"></i></a>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4 text-center">
+                  <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="Images/Christina.jpeg" alt="Christina Cho" style="height: 250px; width: 255px">
+                    <h3>Christina Cho</h3>
+					<h5>Graphic Designer</h5>
+                    <p class="text-muted">"The concept of the design of this website was simplicity but at the same time, we wanted it to be informative.<br>
+					It is my pleasure to be a graphic designer of this company. This is an unforgettable experience to design this website."</p>
+                    <ul class="list-inline social-buttons">
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <a href="#" title="Twitter Website"><i class="fa fa-twitter"></i></a>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <a href="https://www.facebook.com/krystina.jia" title="Facebook Website"><i class="fa fa-facebook"></i></a>
+                        </a>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <a href="#" title="Linkedin Website"><i class="fa fa-linkedin"></i></a>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                </div>
+              </div>
+            </div>
+    </section>
+
+          <!--Footer-->
+            <footer class="container-fluid text-center">
+              <div class="row">
+              <div class="col-sm-4">
+                <h3>Contact Us...</h3>
+                <br>
+                <h4><h4>Address: Burdon Street, Basseterre, St. Kitts and Nevis.
+                    <br>
+                    <br>
+                      Telephone: +1 869-465-2856
+                </h4>
+              </div>
+              <div class="col-sm-4" id="connect">
+                <h3>Connect</h3>
+                <br>
+                <a href="https://facebook.com" class="fa fa-facebook"></a>
+                <a href="https://twitter.com" class="fa fa-twitter"></a>
+                <a href="https://linkedin.com" class="fa fa-linkedin"></a>
+                <a href="https://youtube.com" class="fa fa-youtube"></a>
+              </div>
+    
+            </footer>
+
+			<script>
+
+		function myFunction(e, x) {
+		x.classList.toggle("change");
+		e.stopPropagation();
+		}
+
+		function myFunction1(){
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown if the user clicks outside of it
+		 window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn')) {
+		    var dropdowns = document.getElementsByClassName("dropdown-content");
+		    var i;
+		    for (i = 0; i < dropdowns.length; i++) {
+		      var openDropdown = dropdowns[i];
+		      if (openDropdown.classList.contains('show')) {
+		        openDropdown.classList.remove('show');
+				x=document.getElementsByClassName("dropbtn");
+				myFunction(event, x[0]);
+		      }
+
+		    }
+			
+		  }
+		} 
+	</script>
+    </body>
+    </html>
