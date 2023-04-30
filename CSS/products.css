@@ -1,0 +1,263 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Verdana, sans-serif;
+	background-color: black;
+}
+
+.wrapper{
+	width: 100%;
+}
+
+.container-1 {
+  display: inline-block;
+  z-index: 11;
+  cursor:pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+  z-index: 1;
+}
+
+.dropbtn{
+	cursor: pointer;
+	z-index: 11	;
+}
+
+.dropbtn:focus{
+	background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  z-index:10;
+}
+
+.dropdown a:hover {
+	background-color: #ddd;
+	}
+
+.show {display: block;} 
+
+.item img{
+	width: 100%;
+	height:100%;
+
+}
+
+#logo{
+	width: 100px; 
+	height: 25px; 
+	float: right; 
+	margin: 7px 1.5em 0 0; 
+
+}
+
+/*#header{
+    z-index:1;
+	padding-top: 400px;
+	padding-left: 20px;
+	font-weight: bold;
+}*/
+
+#products-header{
+	padding-bottom: 3.5em;
+	z-index:1;
+	padding-top: 300px;
+	padding-left: 20px;
+	font-weight: bold;
+	font-size: 50px;
+}
+
+.spacing {
+	margin: 3em 0 3em 0;
+	background-color: black;
+}
+
+.carousel-caption {
+      font-size: 2cm;
+      color:  red;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .carousel-caption {
+      font-size: 18px;
+      color: white;
+      padding: 12px 22px;
+      top:50%;
+      transform: translateY(-50%);
+    }
+
+	#middle-page{
+		width: 100%;
+		background: rgb(63,94,251);
+		background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(186,70,252,1) 80%);
+		padding-bottom: 50px;
+	}
+
+	#bottom-page{
+		background: rgb(34,193,195);
+		background: linear-gradient(126deg, rgba(34,193,195,1) 6%, rgba(253,135,45,1) 87%);
+		padding-bottom: 50px;
+	}
+.imagelist{
+	font-size: 0;
+	width: 940px;
+	margin: 0 auto;
+
+}
+
+.imagelist a{
+	margin: 2px;
+	border: 4px solid transparent;
+	display: inline-block;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	opacity: .5;
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-ms-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+}
+
+.imagelist a:hover{
+	border-color:white;
+	opacity: 1;
+}
+
+.imagelist img{
+	width:300px;
+	padding: 15px;
+	height:182px;
+}
+
+.mouse-container{
+	position: absolute;
+	top: 85%;
+	left: 90%;
+	transform: translate(-50%, -50%);
+}
+
+.mouse{
+	width: 70px;
+	height: 100px;
+	border: 4px solid white;
+	border-radius: 60px;
+
+}
+
+.mouse::before{
+	content: "";
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 30px;
+	background-color: #fff;
+	left: 51%;
+	transform: translateX(-50%);
+	border-radius: 50%;
+	opacity: 1;
+	animation: mouse 2s infinite;
+}
+
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+#active{
+	background-color: #ddd;
+}
+
+.clear{
+	clear: both;
+	margin:0;
+	padding:0;
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  padding: 3%;
+  color: white;
+}
+.fa {
+  padding: 15px;
+  font-size: 25px;
+  color:rgb(38, 59, 153);
+}
+
+.fa:hover {
+  color:blueviolet;
+  text-decoration: none;
+  }
+
+#connect{
+	float:right;
+}
+         
+@-webkit-keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+@keyframes mouse{
+	from{
+		opacity:1;
+		top:30px;
+	}
+
+	to{
+		opacity: 0;
+		top: 75px;
+	}
+}
